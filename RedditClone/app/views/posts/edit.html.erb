@@ -1,0 +1,20 @@
+<h1>Update Post!</h1>
+
+<form action="<%= new_post_url %>" method="post">
+<input type="hidden" name="_method" value="patch">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<label>Title
+<input type="textarea" name="post[title]">
+</label>
+
+<label>URL
+<input type="textarea" name="post[url]">
+</label>
+
+<label>Content
+<input type="textarea" name="post[content]">
+</label>
+
+<button>Update</button>
+</form> 
