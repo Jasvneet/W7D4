@@ -14,4 +14,5 @@ class Sub < ApplicationRecord
   
     belongs_to :moderator
 
+    has_many :posts
 end
